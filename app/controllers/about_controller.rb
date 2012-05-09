@@ -2,13 +2,17 @@ class AboutController < ApplicationController
 
 	def index
 	end
-	
-	def about
-    end
 
-    def contact
-    end
+	def properties
+	end
 
-    def help
-    end
+	def contact
+	end
+
+	def services
+	end
+
+	def staff
+	end
+
 end
