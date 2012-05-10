@@ -1,6 +1,6 @@
 CoreHotel::Application.routes.draw do
   scope '/' do
-    match '/about'  	=> 'about#index', :as => :about
+    match '/about'  	=> 'about#about', :as => :about
     match '/contact'  	=> 'about#contact', :as => :contact
     match '/services'  	=> 'about#services', :as => :services
     match '/staff'  	=> 'about#staff', :as => :staff

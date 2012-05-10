@@ -33,8 +33,10 @@
 </div>
 </div>
 <div class="container">
-  <div class="span12" style="background-color: #fff; margin-top: -20px;">
-    <%= image_tag("logo.png", :border => 0 ) %> 
+  <div class="span12" style="background-color: #fff;">
+    <%= image_tag("logo.png", :border => 0, :class => "header-logo" ) %> 
+    <img class="sub-header" src="http://placehold.it/1200x180" alt="">
+
 
     <%= yield %>
   </div> 
