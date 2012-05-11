@@ -12,6 +12,7 @@
     body { background: url('/assets/background1.JPG') no-repeat center center fixed; }
     .main-content.container{ background: #fdfdfd; background: rgba(246,246,246,0.5) ; background: url("/assets/noise-white.jpg") repeat ;}
     .header-logo { background-color: #fff; }
+    .sub-header-logo { width: 100%; }
     .footer { background: url("/assets/noise-grey.jpg") repeat; border-top: 1px solid silver; clear: both; padding: 20px 0px; }
     .footer p { width: 75%; margin: 0 auto; font-size: .9em; color: #fff; }
   </style>
@@ -42,7 +43,7 @@
     <div class="header-logo">
       <%= image_tag("logo.png", :border => 0, :class => "header-logo" ) %>
     </div>
-    <img class="sub-header" src="http://placehold.it/1200x180" alt="">
+      <%= image_tag("TopPhoto0" + (1 + rand(6)).to_s() + ".jpg", :border => 0, :class => "sub-header-logo" ) %>
 
       <%= yield %>  
     <div class="footer">
