@@ -1,8 +1,6 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top: 30px; font-family: 'FontAwesome';}
+body { padding-top: 30px; }
 
-img.sub-header { width: 100%; margin-bottom: 10px; 	}
-img.header-logo { margin-left: 20px; }
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
@@ -19,16 +17,18 @@ img.header-logo { margin-left: 20px; }
 // Font Awesome
 @import "fontawesome";
 
-// Your custom LESS stylesheets goes here
-//
-// Since bootstrap was imported above you have access to its mixins which
-// you may use and inherit here
-//
-// If you'd like to override bootstrap's own variables, you can do so here as well
-// See http://twitter.github.com/bootstrap/less.html for their names and documentation
-//
-// Example:
-// @linkColor: #ff0000;
+@media (max-width: 767px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ }
+
+ @media (max-width: 979px) {
+  .navbar-fixed-top {
+    margin-bottom: 0px;
+  }
+}
 
  // Landscape phones and down
 @media (max-width: 480px) { 
