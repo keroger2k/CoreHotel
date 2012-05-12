@@ -59,11 +59,11 @@
       src: local('PT Sans'), local('PTSans-Regular'), url('http://themes.googleusercontent.com/static/fonts/ptsans/v4/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
     }
 
-    body { background: url('/assets/background1.JPG') no-repeat center center fixed; }
-    .main-content.container{ background: #fdfdfd; background: rgba(246,246,246,0.5) ; background: url("/assets/noise-white.jpg") repeat ;}
+    body { background: url('/assets/background/bmi-il-hi-interior-05.jpg') no-repeat ; background-size: 100%; }
+    .main-content.container{ background: #fdfdfd; background: rgba(246,246,246,0.5) ; background: url("/assets/background/noise-white.jpg") repeat ;}
     .header-logo { background-color: #fff; }
     .sub-header-logo { width: 100%; }
-    .footer { background: url("/assets/noise-grey.jpg") repeat; border-top: 1px solid silver; clear: both; padding: 20px 0px; }
+    .footer { background: url("/assets/background/noise-grey.jpg") repeat; border-top: 1px solid silver; clear: both; padding: 20px 0px; }
     .footer p { width: 75%; margin: 0 auto; font-size: .9em; color: #fff; }
     ul.locations { list-style: none; }
     ul.location-details { list-style: none; }
@@ -108,9 +108,9 @@
   </div>
   <div class="container main-content">
     <div class="header-logo">
-      <%= image_tag("logo.png", :border => 0, :class => "header-logo" ) %>
+      <%= image_tag("logos/core-3-header-logo.png", :border => 0, :class => "header-logo" ) %>
     </div>
-      <%= image_tag("TopPhoto0" + (1 + rand(6)).to_s() + ".jpg", :border => 0, :class => "sub-header-logo" ) %>
+      <%= image_tag("sub-headers/bmi-il-hi-interior-0" + (1 + rand(4)).to_s() + ".jpg", :border => 0, :class => "sub-header-logo" ) %>
 
       <%= yield %>  
     <div class="footer">
