@@ -1,8 +1,4 @@
 CoreHotel::Application.routes.draw do
-  namespace :admin do 
-  	root :to => "staffs#index"
-  	resources :staffs 
-  end
 
   scope '/' do
     match '/about'  	=> 'about#about', :as => :about
