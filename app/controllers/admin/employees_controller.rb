@@ -4,7 +4,7 @@ class Admin::EmployeesController < ApplicationController
   layout 'admin'
 
   def index
-    @employees = Employee.all(:order => "[order]")
+    @employees = Employee.all(:order => `order`)
     respond_with(@employees)
   end
   
