@@ -4,7 +4,7 @@ class Admin::EmployeesController < ApplicationController
   layout 'admin'
 
   def index
-    @employees = Employee.all
+    @employees = Employee.all(:order => "[order]")
     respond_with(@employees)
   end
   
@@ -22,7 +22,7 @@ class Admin::EmployeesController < ApplicationController
 
   def update
     if @employee.update_attributes(params[:employee])
-      redirect_to admin_employees_path, :notice => "Updated..." 
+      redirect_to [:admin, @employee], notice: 'Staff was successfully updated.'
     else
       render :action => 'edit'
     end
