@@ -3,6 +3,7 @@ class EmployeeController < ApplicationController
 
   def index
   	@employees = Employee.all
+    respond_with(@employees)
   end
   
 end

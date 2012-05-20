@@ -7,45 +7,32 @@
 	<div class="span10 content-container">
 		<h2>Staff</h2>
 		<ul class="staff">
+		<% @employees.each do |employee| %>
 			<li class="person">
 				<div class="row-fluid">
 					<div class="span1">
-						<img src="http://placehold.it/120x150" alt=""></div>
+						<img src="http://placehold.it/120x150" alt="">
+					</div>
 					<div class="span6">
 						<ul class="person-details">
-							<li>
-								<h4>Mark Fetzer</h4>
+							<li>		
+								<h4>
+									<%= employee.name %>
+								</h4>
 							</li>
-							<li>Da Boss!</li>
+							<li>
+								<%= employee.title %>
+							</li>
 							<li>
 								<p>
-									Mr. Fetzer is responsible for overall strategic planning, organizational development, new business development, investor relations, franchise, relations and acquisitions.
+									<%= employee.bio %>
 								</p>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</li>
-			<li class="person">
-				<div class="row-fluid">
-					<div class="span1">
-						<img src="http://placehold.it/120x150" alt=""></div>
-					<div class="span6">
-						<ul class="person-details">
-							<li>
-								<h4>Mark Fetzer</h4>
-							</li>
-							<li>Da Boss!</li>
-							<li>
-								<p>
-									Mr. Fetzer is responsible for overall strategic planning, organizational development, new business development, investor relations, franchise, relations and acquisitions.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-
+		<% end %>
 		</ul>
 	</div>
 </div>
