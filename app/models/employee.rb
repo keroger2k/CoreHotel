@@ -1,3 +1,5 @@
 class Employee < ActiveRecord::Base
-  attr_accessible :bio, :order, :image_url, :name, :title
+  attr_accessible :name, :title, :bio, :order, :avatar
+  
+  mount_uploader :avatar, AvatarUploader
 end

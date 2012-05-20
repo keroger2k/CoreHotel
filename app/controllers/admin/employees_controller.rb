@@ -1,6 +1,6 @@
 class Admin::EmployeesController < ApplicationController
   respond_to :html
-  before_filter :get_post, :except => [:index, :create]
+  before_filter :get_employee, :except => [:index, :create]
   layout 'admin'
 
   def index
@@ -44,7 +44,7 @@ class Admin::EmployeesController < ApplicationController
   end
 
   private
-    def get_post
+    def get_employee
       @employee = params[:id].present? ? Employee.find(params[:id]) : Employee.new
     end
 end

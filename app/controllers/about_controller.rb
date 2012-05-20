@@ -12,7 +12,4 @@ class AboutController < ApplicationController
 	def services
 	end
 
-	def staff
-	end
-
 end

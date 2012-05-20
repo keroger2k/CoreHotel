@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
+gem "rmagick"
+gem 'carrierwave'
 
 group :production do
   gem 'pg'

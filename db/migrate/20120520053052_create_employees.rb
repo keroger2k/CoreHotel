@@ -4,7 +4,8 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :name
       t.string :title
       t.text :bio
-      t.string :image_url
+      t.string :avatar
+      t.string :order, :default => 1
 
       t.timestamps
     end

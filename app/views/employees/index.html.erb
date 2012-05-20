@@ -11,7 +11,7 @@
 			<li class="person">
 				<div class="row-fluid">
 					<div class="span1">
-						<img src="http://placehold.it/120x150" alt="">
+						<%= image_tag employee.avatar_url(:thumb) if employee.avatar? %>
 					</div>
 					<div class="span6">
 						<ul class="person-details">
