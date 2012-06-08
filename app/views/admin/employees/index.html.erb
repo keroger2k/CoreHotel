@@ -20,7 +20,7 @@
         <td><%= employee.title %></td>
         <td><%= employee.bio %></td>
         <td><%= employee.order %></td>
-        <td><%=l employee.created_at %></td>
+        <td><%= employee.created_at.strftime("%b %d, %Y") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_admin_employee_path(employee), :class => 'btn btn-mini' %>

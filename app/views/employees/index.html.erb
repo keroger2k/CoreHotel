@@ -1,7 +1,7 @@
 <div class="row-fluid">
 	<div class="span2">
 		<p class="side-text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh arcu, egestas ut tincidunt sed, laoreet rutrum justo. Pellentesque ornare, est vel pharetra tincidunt, massa diam mattis justo, id ultrices diam justo in sem. Etiam eget risus lorem.
+			Core 3 Hotel Management’s staff takes pride in each hotel they manage.
 		</p>
 	</div>
 	<div class="span10 content-container">
@@ -11,9 +11,13 @@
 			<li class="person">
 				<div class="row-fluid">
 					<div class="span1">
-						<%= image_tag employee.avatar_url(:thumb) if employee.avatar? %>
+						<% if employee.avatar? %>
+							image_tag employee.avatar_url(:thumb) 
+						<% else %>
+							<img src="http://placehold.it/120x150" alt="">
+						<% end %>
 					</div>
-					<div class="span6">
+					<div class="span8">
 						<ul class="person-details">
 							<li>		
 								<h4>
@@ -21,7 +25,9 @@
 								</h4>
 							</li>
 							<li>
-								<%= employee.title %>
+								<label class="title">
+								 <em><%= employee.title %></em>
+								</label>
 							</li>
 							<li>
 								<p>

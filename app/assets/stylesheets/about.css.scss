@@ -29,8 +29,11 @@ ul#hotel-list li.hotel { border-bottom: 2px solid silver; }
 ul#hotel-list .address { list-style: none;  }    
 ul#hotel-list .address li { padding-bottom: 4px;  }
 ul.staff { list-style: none; }
+li.person { margin-bottom: 10px; }
 ul.person-details { list-style: none; }
-ul.person-details p { font-size: 1.25em; }
+ul.person-details h4 { font-size: 1.5em; }
+ul.person-details label.title { font-size: 1.1em; }
+ul.person-details p { font-size: 1.1em; }
 
 .content-container { padding: 15px; }
 
@@ -48,11 +51,12 @@ ul.person-details p { font-size: 1.25em; }
 }
 
 .side-text { 
-	padding: 15px; 
+	padding: 20px 60px 0px 40px;
 	font-family: "FontAwesome",Georgia,Times,"Times New Roman",serif; 
 	font-size: 14px; 
 	line-height: 1.4em;
 	color: #333;
+	font-style: italic;
 }
 
 .content-container p { 

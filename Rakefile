@@ -5,3 +5,8 @@
 require File.expand_path('../config/application', __FILE__)
 
 CoreHotel::Application.load_tasks
+
+desc "Start the server"
+task :start do
+  Kernel.exec "bundle exec foreman start"
+end
