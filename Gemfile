@@ -6,6 +6,7 @@ gem 'carrierwave'
 gem 'thin'
 gem 'foreman'
 gem 'pg'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
